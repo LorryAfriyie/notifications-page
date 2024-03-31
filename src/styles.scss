@@ -1,3 +1,5 @@
+@import "NotificationPage.scss";
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -10,8 +12,10 @@
 }
 
 body {
+  background-color: hsl(211, 68%, 94%);
+  font-size: 16px;
   margin: 0;
-  display: flex;
-  place-items: center;
+  display: grid;
+  place-content: center;
   min-height: 100vh;
 }
