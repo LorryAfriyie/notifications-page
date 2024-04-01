@@ -1,26 +1,33 @@
 .notification-page {
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
-  width: 500px;
+  padding: 0 20px 0 20px;
+  max-width: 750px;
 
   .card-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(2, 1fr);
 
     .badge {
       display: flex;
       align-items: center;
+      justify-content: left;
 
       .badge-notification {
         background-color: hsl(219, 85%, 26%);
         color: hsl(0, 0%, 100%);
-        padding: 5px;
+        padding: 2px 10px 2px 10px;
+        margin-left: 10px;
         border-radius: 5px;
       }
     }
 
     .read {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+
       a {
         text-decoration: none;
         color: #000;

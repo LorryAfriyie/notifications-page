@@ -1,3 +1,5 @@
+import { NotificationList } from "./NotificationList";
+
 export const NotificationPage = () => {
   return (
     <div className="notification-page">
@@ -12,6 +14,8 @@ export const NotificationPage = () => {
           <a href="!#">Mark all as read</a>
         </div>
       </div>
+
+      <NotificationList />
     </div>
   );
 };
