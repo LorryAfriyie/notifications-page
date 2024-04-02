@@ -4,24 +4,28 @@ export const NotificationList = () => {
       <ul>
         {listOfNotifications.map((y) => {
           return (
-            <li key={y.personId}>
-              <img src={y.image} alt="" />
-              <strong>{y.name + " "}</strong>
-              {y.note_msg + " " + y.post}
-              <br />
-              {y.timestamp}
+            <li key={y.personId} className="aligned">
+              <div className="img">
+                <img src={y.image} alt="" />
+              </div>
+              <div className="text">
+                <strong>{y.name + " "}</strong>
+                {y.note_msg + " " + y.post}
+                <br />
+                {y.timestamp}
 
-              {privateMessage.map((x) => {
-                return (
-                  <>
-                    {x.personId === y.personId ? (
-                      <p className="private-message">{x.message}</p>
-                    ) : (
-                      ""
-                    )}
-                  </>
-                );
-              })}
+                {privateMessage.map((x) => {
+                  return (
+                    <>
+                      {x.personId === y.personId ? (
+                        <p className="private-message">{x.message}</p>
+                      ) : (
+                        ""
+                      )}
+                    </>
+                  );
+                })}
+              </div>
             </li>
           );
         })}

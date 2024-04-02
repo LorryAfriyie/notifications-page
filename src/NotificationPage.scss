@@ -8,7 +8,9 @@
     display: grid;
     place-content: center;
     grid-template-columns: repeat(2, 1fr);
-
+    padding-left: 20px;
+    padding-right: 20px;
+    
     .badge {
       display: flex;
       align-items: center;
