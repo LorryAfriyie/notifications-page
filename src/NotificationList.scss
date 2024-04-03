@@ -1,10 +1,14 @@
 .notification-list {
   ul {
+    padding: 0;
     li {
       list-style-type: none;
-      padding: 15px 0 15px 0;
+      padding: 15px 20px 15px 20px;
       display: flex;
       align-items: start;
+      background-color: hsl(210, 60%, 98%);
+      border-radius: 10px;
+      margin-bottom: 10px;
 
       .img {
         margin-right: 20px;
@@ -19,10 +23,42 @@
         position: relative;
         top: 5px;
 
+        .person-name {
+          cursor: pointer;
+        }
+
+        .person-name:hover {
+          color: hsl(219, 85%, 26%);
+        }
+
+        .post {
+          cursor: pointer;
+          color: hsl(219, 12%, 42%);
+        }
+
+        .post:hover {
+          color: hsl(219, 85%, 26%);
+        }
+
         .private-message {
-          background-color: hsl(205, 33%, 90%);
           padding: 30px;
           border-radius: 5px;
+          border: 1px solid hsl(205, 33%, 90%);
+        }
+
+        .private-message:hover {
+          background-color: hsl(205, 33%, 90%);
+        }
+
+        .info::after {
+          content: "";
+          position: absolute;
+        
+          width: 6px;
+          height: 6px;
+          background-color: hsl(1, 90%, 64%);
+          border-radius: 50%;
+          margin-left: 5px;
         }
       }
     }

@@ -9,20 +9,22 @@ export const NotificationList = () => {
                 <img src={y.image} alt="" />
               </div>
               <div className="text">
-                <strong>{y.name + " "}</strong>
-                {y.note_msg + " " + y.post}
-                <br />
+                <div className="info">
+                  <strong className="person-name">{y.name + " "}</strong>
+                  {y.note_msg + " "}
+                  <strong className="post">{y.post}</strong>
+                </div>
                 {y.timestamp}
 
                 {privateMessage.map((x) => {
                   return (
-                    <>
+                    <div key={x.msgId} className="private-message-container">
                       {x.personId === y.personId ? (
                         <p className="private-message">{x.message}</p>
                       ) : (
                         ""
                       )}
-                    </>
+                    </div>
                   );
                 })}
               </div>
