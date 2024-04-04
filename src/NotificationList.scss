@@ -1,6 +1,7 @@
 .notification-list {
   ul {
     padding: 0;
+    
     li {
       list-style-type: none;
       padding: 15px 20px 15px 20px;
@@ -53,12 +54,12 @@
         .info::after {
           content: "";
           position: absolute;
-        
           width: 6px;
           height: 6px;
           background-color: hsl(1, 90%, 64%);
           border-radius: 50%;
           margin-left: 5px;
+          margin-top: 6px;
         }
       }
     }
