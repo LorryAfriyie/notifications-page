@@ -28,6 +28,7 @@ export const NotificationList = () => {
                   );
                 })}
               </div>
+              <div className="comment-content">hello</div>
             </li>
           );
         })}

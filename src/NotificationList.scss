@@ -1,12 +1,13 @@
 .notification-list {
   ul {
     padding: 0;
-    
+
     li {
       list-style-type: none;
       padding: 15px 20px 15px 20px;
       display: flex;
       align-items: start;
+
       background-color: hsl(210, 60%, 98%);
       border-radius: 10px;
       margin-bottom: 10px;
@@ -51,6 +52,7 @@
           background-color: hsl(205, 33%, 90%);
         }
 
+
         .info::after {
           content: "";
           position: absolute;
@@ -61,6 +63,10 @@
           margin-left: 5px;
           margin-top: 6px;
         }
+      }
+
+      .comment-content {
+        justify-content: end;
       }
     }
   }
