@@ -28,7 +28,15 @@ export const NotificationList = () => {
                   );
                 })}
               </div>
-              <div className="comment-content">hello</div>
+              <div className="comment-content">
+                {imageComment.map((z) => {
+                  return z.personId === y.personId ? (
+                    <img src={z.img} alt="" key={z.imgCommentId} />
+                  ) : (
+                    ""
+                  );
+                })}
+              </div>
             </li>
           );
         })}
