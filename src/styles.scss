@@ -1,6 +1,8 @@
 @import "NotificationPage.scss";
 @import "NotificationList.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,4 +23,7 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
