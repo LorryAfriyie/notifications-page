@@ -9,11 +9,20 @@ export const NotificationList = () => {
                 <img src={y.image} alt="" />
               </div>
               <div className="text">
-                <div className="info">
-                  <strong className="person-name">{y.name + " "}</strong>
-                  {y.note_msg + " "}
-                  <strong className="post">{y.post}</strong>
-                </div>
+                {y.new === 1 ? (
+                  <div className="new">
+                    <strong className="person-name">{y.name + " "}</strong>
+                    {y.note_msg + " "}
+                    <strong className="post">{y.post}</strong>
+                  </div>
+                ) : (
+                  <div className="info">
+                    <strong className="person-name">{y.name + " "}</strong>
+                    {y.note_msg + " "}
+                    <strong className="post">{y.post}</strong>
+                  </div>
+                )}
+
                 {y.timestamp}
 
                 {privateMessage.map((x) => {
@@ -54,6 +63,7 @@ const listOfNotifications = [
     post: "My first tournament today!",
     timestamp: "1m ago",
     msg: 0,
+    new: 1,
   },
   {
     personId: 2,
@@ -63,6 +73,7 @@ const listOfNotifications = [
     post: "",
     timestamp: "5m ago",
     msg: 0,
+    new: 1,
   },
   {
     personId: 3,
@@ -72,6 +83,7 @@ const listOfNotifications = [
     post: "Chess Club",
     timestamp: "1 day ago",
     msg: 0,
+    new: 1,
   },
   {
     personId: 4,
