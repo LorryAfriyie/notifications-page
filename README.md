@@ -10,9 +10,9 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -35,8 +35,6 @@ Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to t
 
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - Solution URL: [notifications-page](https://github.com/LorryAfriyie/notifications-page)
@@ -53,6 +51,23 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Vite.js](https://vitejs.dev/) - Frontend Tooling
+
+### What I learned
+
+Below is a snippet of scss code related to attribute selectors where I was able to target the list tag of an unordered list which contains the attribute class with the name "new".
+
+```scss
+ul {
+  li[class="new"] {
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 10px;
+  }
+}
+```
+
+### Useful resources
+
+- [How To Select HTML Elements Using ID, Class, and Attribute Selectors in CSS](https://www.digitalocean.com/community/tutorials/how-to-select-html-elements-using-id-class-and-attribute-selectors-in-css) - I mainly used this post to learn about attribute selectors in order to select an HTML tag along with an associated attritube assigned to the tag to be able to target it with a specific styling preference.
 
 ## Author
 

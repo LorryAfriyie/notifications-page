@@ -3,25 +3,18 @@ export const NotificationList = () => {
     <div className="notification-list">
       <ul>
         {listOfNotifications.map((y) => {
-          return (
-            <li key={y.personId} className="aligned">
+          return y.new === 1 ? (
+            <li key={y.personId} className="new">
               <div className="img">
                 <img src={y.image} alt="" />
               </div>
+
               <div className="text">
-                {y.new === 1 ? (
-                  <div className="new">
-                    <strong className="person-name">{y.name + " "}</strong>
-                    {y.note_msg + " "}
-                    <strong className="post">{y.post}</strong>
-                  </div>
-                ) : (
-                  <div className="info">
-                    <strong className="person-name">{y.name + " "}</strong>
-                    {y.note_msg + " "}
-                    <strong className="post">{y.post}</strong>
-                  </div>
-                )}
+                <div className="new">
+                  <strong className="person-name">{y.name + " "}</strong>
+                  {y.note_msg + " "}
+                  <strong className="post">{y.post}</strong>
+                </div>
 
                 {y.timestamp}
 
@@ -37,6 +30,45 @@ export const NotificationList = () => {
                   );
                 })}
               </div>
+
+              <div className="comment-content">
+                {imageComment.map((z) => {
+                  return z.personId === y.personId ? (
+                    <img src={z.img} alt="" key={z.imgCommentId} />
+                  ) : (
+                    ""
+                  );
+                })}
+              </div>
+            </li>
+          ) : (
+            <li key={y.personId}>
+              <div className="img">
+                <img src={y.image} alt="" />
+              </div>
+
+              <div className="text">
+                <div className="info">
+                  <strong className="person-name">{y.name + " "}</strong>
+                  {y.note_msg + " "}
+                  <strong className="post">{y.post}</strong>
+                </div>
+
+                {y.timestamp}
+
+                {privateMessage.map((x) => {
+                  return (
+                    <div key={x.msgId} className="private-message-container">
+                      {x.personId === y.personId ? (
+                        <p className="private-message">{x.message}</p>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+
               <div className="comment-content">
                 {imageComment.map((z) => {
                   return z.personId === y.personId ? (
@@ -93,6 +125,7 @@ const listOfNotifications = [
     post: "",
     timestamp: "5 days ago",
     msg: 1,
+    new: 0,
   },
   {
     personId: 5,
@@ -102,6 +135,7 @@ const listOfNotifications = [
     post: "",
     timestamp: "1 week ago",
     msg: 0,
+    new: 0,
   },
   {
     personId: 6,
@@ -111,6 +145,7 @@ const listOfNotifications = [
     post: "5 end-game strategies to increase your win rate",
     timestamp: "2 weeks ago",
     msg: 0,
+    new: 0,
   },
   {
     personId: 7,
@@ -120,6 +155,7 @@ const listOfNotifications = [
     post: "Chess Club",
     timestamp: "2 weeks ago",
     msg: 0,
+    new: 0,
   },
 ];
 
