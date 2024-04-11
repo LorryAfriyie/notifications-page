@@ -16,7 +16,7 @@ export const NotificationList = () => {
                   <strong className="post">{y.post}</strong>
                 </div>
 
-                {y.timestamp}
+                <div className="timestamp">{y.timestamp}</div>
 
                 {privateMessage.map((x) => {
                   return (
@@ -54,7 +54,7 @@ export const NotificationList = () => {
                   <strong className="post">{y.post}</strong>
                 </div>
 
-                {y.timestamp}
+                <div className="timestamp">{y.timestamp}</div>
 
                 {privateMessage.map((x) => {
                   return (

@@ -57,6 +57,10 @@
           background-color: hsl(205, 33%, 90%);
         }
 
+        .timestamp {
+          color: #6c757d;
+        }
+
         div[class="new"]::after {
           content: "";
           position: absolute;
