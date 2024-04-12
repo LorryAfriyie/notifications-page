@@ -7,7 +7,9 @@ export const NotificationPage = () => {
         <div className="badge">
           <h2>Notifications</h2>
 
-          <div className="badge-notification">3</div>
+          <div className="badge-notification">
+            <strong>3</strong>
+          </div>
         </div>
 
         <div className="read">
