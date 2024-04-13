@@ -18,7 +18,11 @@ export const List = ({
 
           <div className="message">{y.note_msg + " "}</div>
 
-          <strong className="post">{y.post}</strong>
+          {y.post.includes("Chess Club") ? (
+            <strong className="chess">{y.post}</strong>
+          ) : (
+            <strong className="post">{y.post}</strong>
+          )}
         </div>
 
         <div className="timestamp">{y.timestamp}</div>

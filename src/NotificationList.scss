@@ -9,7 +9,7 @@
 
     li {
       list-style-type: none;
-      padding: 15px 20px 15px 10px;
+      padding: 15px 10px 15px 10px;
       display: flex;
       align-items: start;
       display: grid;
@@ -43,6 +43,10 @@
           color: hsl(219, 85%, 26%);
         }
 
+        .chess {
+          color: hsl(219, 85%, 26%);
+        }
+
         .post {
           cursor: pointer;
           color: hsl(219, 12%, 42%);
@@ -54,7 +58,7 @@
 
         .private-message {
           padding: 15px;
-          margin-right: -4rem;
+          margin-right: -2rem;
           border-radius: 5px;
           border: 1px solid hsl(205, 33%, 90%);
         }
