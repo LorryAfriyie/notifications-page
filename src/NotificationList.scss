@@ -28,7 +28,7 @@
       .text {
         position: relative;
         top: 1px;
-        left: 8px;
+        left: 10px;
 
         .message {
           display: contents;
@@ -112,6 +112,16 @@
           display: grid;
           place-content: center;
         }
+
+        .text {
+          left: 0;
+        }
+
+        .comment-content {
+          position: relative;
+          right: 10px;
+        }
+
         gap: 0;
       }
     }
