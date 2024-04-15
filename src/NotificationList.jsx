@@ -7,8 +7,10 @@ export const NotificationList = () => {
   return (
     <div className="notification-list">
       <ul>
+        {/* Iterate through the list of notifications */}
         {listOfNotifications.map((y) => {
           return y.new === 1 ? (
+            // Mark notifications that are new with a highlighted bar and a red dot
             <List
               y={y}
               privateMessage={privateMessage}
@@ -17,6 +19,7 @@ export const NotificationList = () => {
               listStyle={"new"}
             />
           ) : (
+            // Display normal list of notification without the markings indicating that they are new
             <List
               y={y}
               privateMessage={privateMessage}
