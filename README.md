@@ -27,13 +27,17 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Below are screenshots of the challenge in desktop and mobile view
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+[Notification Page desktop screenshot](./public/images/screenshots/notification_page-desktop_screenshot.jpeg)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+[Notification Page mobile screenshot](./public/images/screenshots/notification_page-mobile_screenshot.jpeg)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+Below are sceenshots of the challenge where there is an interaction with the page
+
+[Notification Page desktop interaction screenshot](./public/images/screenshots/notification_page-desktop_interaction_screenshot.jpeg)
+
+[Notification Page mobile screenshot](./public/images/screenshots/notification_page-mobile_interaction_screenshot.jpeg)
 
 ### Links
 
