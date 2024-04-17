@@ -41,8 +41,8 @@ Below are sceenshots of the challenge where there is an interaction with the pag
 
 ### Links
 
-- Solution URL: [notifications-page](https://github.com/LorryAfriyie/notifications-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [notifications-page solution URL](https://github.com/LorryAfriyie/notifications-page)
+- Live Site URL: [notifications-page live site URL](https://lorryafriyie.github.io/notifications-page/)
 
 ## My process
 
