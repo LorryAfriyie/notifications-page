@@ -7,7 +7,7 @@ export const List = ({
   listStyle,
 }) => {
   return (
-    <li key={y.personId} className={listStyle}>
+    <li className={listStyle}>
       {/* Image of people */}
       <div className="img">
         <img src={y.image} alt={y.image} />
